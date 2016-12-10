@@ -1,0 +1,11 @@
+applications:
+- path: target/TomcatHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: OreoTrio
+  host: OreoTrio
+  disk_quota: 1024M
+  services:
+  - Disaster database
+  buildpack: java_buildpack
